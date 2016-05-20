@@ -477,8 +477,8 @@ void Scene::paintGL()
 	m_selc_program->bind();
 	m_program->setUniformValue("matrixView", m_view);
 	m_program->setUniformValue("projectionMatrix", m_projection);
-	if(m_selectedModel)
-		m_selc_program->setUniformValue("matrixModel", m_models[m_selectedModel]->getTransformations());
+	//if(m_selectedModel)
+	//	m_selc_program->setUniformValue("matrixModel", m_models[m_selectedModel]->getTransformations());
 
     //the floor is always the first model, so if (showFloor == false), we simply start the rendering
     //with the second model
