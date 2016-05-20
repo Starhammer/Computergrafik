@@ -1,0 +1,348 @@
+# Blender3D MTL File: 
+# Material Count: 32
+newmtl body_paint7_alcantara_black.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd alcantara_black.tga
+
+
+newmtl plastic_dash3_plastic_dash_.tga
+Ns 49.019608
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.413725 0.413725 0.413725
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd plastic_dash_.tga
+
+
+newmtl body_paint7_nodamage.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd nodamage.tga
+
+
+newmtl body_paint7_cloth02_darkgrey.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd cloth02_darkgrey.tga
+
+
+newmtl body_paint4
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl body_paint7_undercarriage.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd undercarriage.tga
+
+
+newmtl body_paint7
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl body_paint7_xdrive.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd xdrive.tga
+
+
+newmtl body_paint7_underbody.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd underbody.tga
+
+
+newmtl Material__1225
+Ns 11.764706
+Ka 0.000000 0.000000 0.000000
+Kd 0.436078 0.116078 0.116078
+Ks 0.450000 0.450000 0.450000
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl carbon_fibre_carbon_fibre.tga
+Ns 27.450980
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.220000 0.220000 0.220000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd carbon_fibre.tga
+
+
+newmtl plastic_dash2_plastic_dash_.tga
+Ns 49.019608
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.413725 0.413725 0.413725
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd plastic_dash_.tga
+
+
+newmtl body_paint7_cd2.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd cd2.tga
+
+
+newmtl body_paint5
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl decals_nodamage.tga
+Ns 5.882353
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.405000 0.405000 0.405000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd nodamage.tga
+
+
+newmtl body_paint7_carbon_fibre.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd carbon_fibre.tga
+
+
+newmtl body_paint7_navigation.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd navigation.tga
+
+
+newmtl body_paint7_vehicle_generic_tyrew
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd vehicle_generic_tyrewallblack.tga
+
+
+newmtl Material__1219
+Ns 358.823529
+Ka 0.000000 0.000000 0.000000
+Kd 0.034510 0.034510 0.034510
+Ks 0.450000 0.450000 0.450000
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl body_paint6
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+
+
+newmtl body_paint7_vehiclelights128.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd vehiclelights128.tga
+
+
+newmtl carpet_carpet.tga
+Ns 19.607843
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.325000 0.325000 0.325000
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd carpet.tga
+
+
+newmtl body_paint7_leather02_nero.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd leather02_nero.tga
+
+
+newmtl body_paint7_back.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd back.tga
+
+
+newmtl plastic_dash4_plastic_dash_.tga
+Ns 49.019608
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.413725 0.413725 0.413725
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd plastic_dash_.tga
+
+
+newmtl plastic_dash1_plastic_dash_.tga
+Ns 49.019608
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.413725 0.413725 0.413725
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd plastic_dash_.tga
+
+
+newmtl body_paint7_stuff.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd stuff.tga
+
+
+newmtl body_paint7_bumper_frame.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd bumper_frame.tga
+
+
+newmtl plastic_dash_plastic_dash_.tga
+Ns 49.019608
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.413725 0.413725 0.413725
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd plastic_dash_.tga
+
+
+newmtl body_paint7_lights.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd lights.tga
+
+
+newmtl plastic_dash0_plastic_dash_.tga
+Ns 49.019608
+Ka 0.000000 0.000000 0.000000
+Kd 0.800000 0.800000 0.800000
+Ks 0.413725 0.413725 0.413725
+Ni 1.000000
+d 0.000000
+illum 2
+map_Kd plastic_dash_.tga
+
+
+newmtl body_paint7_interior_lod0.tga
+Ns 21.568627
+Ka 0.000000 0.000000 0.000000
+Kd 0.298039 0.075294 0.047059
+Ks 0.480392 0.480392 0.480392
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd interior_lod0.tga
+
+
