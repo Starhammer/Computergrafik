@@ -262,7 +262,7 @@ void Scene::reloadShader()
 
 	if (m_selc_program)
 		delete m_selc_program;
-	m_selc_program = loadShader(QString("shader/vertex.glsl"), QString("shader/selc_fragment.glsl"));
+	m_selc_program = loadShaders(QString("shader/vertex.glsl"), QString("shader/selc_fragment.glsl"));
 }
 
 void Scene::setFloor()
