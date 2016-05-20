@@ -71,6 +71,11 @@ Scene::~Scene()
         delete m_program;
         m_program = 0;
     }
+	if (m_selc_program)
+	{
+		delete m_selc_program;
+		m_selc_program = 0;
+	}
 }
 
 void Scene::saveScene(QString filepath)
@@ -469,8 +474,11 @@ void Scene::paintGL()
 
     //render all models
 	m_program->bind();
+	m_selc_program->bind();
 	m_program->setUniformValue("matrixView", m_view);
 	m_program->setUniformValue("projectionMatrix", m_projection);
+	m_selc_program->setUniformValue("matrixView", m_view);
+	m_selc_program->setUniformValue("projectionMatrix", m_projection);
 	m_selc_program->setUniformValue("matrixModel", m_models[m_selectedModel]->getTransformations());
 
     //the floor is always the first model, so if (showFloor == false), we simply start the rendering
