@@ -78,4 +78,7 @@
       <Filter>Header Files</Filter>
     </CustomBuild>
   </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="shader\slec_fragment.glsl" />
+  </ItemGroup>
 </Project>

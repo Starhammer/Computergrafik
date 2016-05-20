@@ -258,6 +258,7 @@ void Scene::reloadShader()
     if (m_program)
         delete m_program;
     m_program = loadShaders(QString("shader/vertex.glsl"), QString("shader/fragment.glsl"));
+
 }
 
 void Scene::setFloor()
@@ -445,7 +446,6 @@ void Scene::setTransformations()
     m_view.rotate((yRot / 16.0f), 0.0f, 1.0f, 0.0f);
     m_view.rotate((zRot / 16.0f), 0.0f, 0.0f, 1.0f);
 }
-
 
 void Scene::paintGL()
 {
