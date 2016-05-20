@@ -79,6 +79,6 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <FxCompile Include="shader\slec_fragment.glsl" />
+    <FxCompile Include="shader\selc_fragment.glsl" />
   </ItemGroup>
 </Project>

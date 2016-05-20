@@ -24,6 +24,7 @@ inline void OpenGLError()
 Scene::Scene(QWidget *parent) :  QGLWidget(parent)
 {
     m_program = nullptr;
+	m_selc_program = nullptr;
 
     mousepressed = false;
     isDragging = false;
@@ -259,6 +260,9 @@ void Scene::reloadShader()
         delete m_program;
     m_program = loadShaders(QString("shader/vertex.glsl"), QString("shader/fragment.glsl"));
 
+	if (m_selc_program)
+		delete m_selc_program;
+	m_selc_program = loadShader(QString("shader/vertex.glsl"), QString("shader/selc_fragment.glsl"));
 }
 
 void Scene::setFloor()
