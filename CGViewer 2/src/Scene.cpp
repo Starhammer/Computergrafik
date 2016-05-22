@@ -24,6 +24,7 @@ inline void OpenGLError()
 Scene::Scene(QWidget *parent) :  QGLWidget(parent)
 {
     m_program = nullptr;
+	new_program = nullptr;
 
     mousepressed = false;
     isDragging = false;
@@ -70,6 +71,11 @@ Scene::~Scene()
         delete m_program;
         m_program = 0;
     }
+	if (new_program)
+	{
+		delete new_program;
+		new_program = 0;
+	}
 }
 
 void Scene::saveScene(QString filepath)
@@ -258,6 +264,9 @@ void Scene::reloadShader()
     if (m_program)
         delete m_program;
     m_program = loadShaders(QString("shader/vertex.glsl"), QString("shader/fragment.glsl"));
+	if (new_program)
+		delete new_program;
+	new_program = loadShaders(QString("shader/vertex.glsl"), QString("shader/new_fragment.glsl"));
 }
 
 void Scene::setFloor()
@@ -465,6 +474,7 @@ void Scene::paintGL()
 
 	 //bind the shader program
         m_program->bind();
+		new_program->bind();
 		m_program->setUniformValue("viewMatrix", m_view);
 		m_program->setUniformValue("projectionMatrix", m_projection);
 
