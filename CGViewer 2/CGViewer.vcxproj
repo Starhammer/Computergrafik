@@ -65,7 +65,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -106,7 +106,7 @@
       <ExceptionHandling>Sync</ExceptionHandling>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <Optimization>MaxSpeed</Optimization>
-      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_CONSOLE;UNICODE;WIN32;WIN64;QT_NO_DEBUG;QT_OPENGL_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;NDEBUG;QT_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PreprocessToFile>false</PreprocessToFile>
       <ProgramDataBaseFileName>$(IntDir)vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -152,9 +152,9 @@
     <ClInclude Include="src\CGFunctions.h" />
     <ClInclude Include="src\CGTypes.h" />
     <CustomBuild Include="src\EditWidgets.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_DLL  "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing EditWidgets.h...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_DLL  "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing EditWidgets.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\moc\moc_%(Filename).cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\moc\moc_%(Filename).cpp</Outputs>
@@ -163,9 +163,9 @@
     </CustomBuild>
     <ClInclude Include="src\Light.h" />
     <CustomBuild Include="src\Mainwindow.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_DLL  "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing Mainwindow.h...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_DLL  "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing Mainwindow.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\moc\moc_%(Filename).cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\moc\moc_%(Filename).cpp</Outputs>
@@ -174,9 +174,9 @@
     </CustomBuild>
     <ClInclude Include="src\Model.h" />
     <CustomBuild Include="src\Scene.h">
-      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_DLL  "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Moc%27ing Scene.h...</Message>
-      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(QTDIR)\bin\moc.exe"  "%(FullPath)" -o ".\moc\moc_%(Filename).cpp"  -D_CONSOLE -DUNICODE -DWIN32 -DWIN64 -DQT_NO_DEBUG -DQT_OPENGL_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DNDEBUG -DQT_DLL  "-I." "-IC:\Qt\5.6\msvc2015_64\include" "-IC:\Qt\5.6\msvc2015_64\include\QtOpenGL" "-IC:\Qt\5.6\msvc2015_64\include\QtWidgets" "-IC:\Qt\5.6\msvc2015_64\include\QtGui" "-IC:\Qt\5.6\msvc2015_64\include\QtANGLE" "-IC:\Qt\5.6\msvc2015_64\include\QtCore" "-I.\moc" "-IC:\Qt\5.6\msvc2015_64\mkspecs\win32-msvc2015"</Command>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Moc%27ing Scene.h...</Message>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.\moc\moc_%(Filename).cpp</Outputs>
       <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\moc\moc_%(Filename).cpp</Outputs>
@@ -188,7 +188,7 @@
   <ImportGroup Label="ExtensionTargets" />
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_x64="msvc2015_64" />
+      <UserProperties UicDir=".\GeneratedFiles" RccDir=".\GeneratedFiles" Qt5Version_x0020_x64="msvc2015_64 5.6" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>
