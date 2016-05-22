@@ -463,15 +463,19 @@ void Scene::paintGL()
     //set the view matrix
     setTransformations();
 
+	 //bind the shader program
+        m_program->bind();
+		m_program->setUniformValue("viewMatrix", m_view);
+		m_program->setUniformValue("projectionMatrix", m_projection);
+
     //render all models
     //the floor is always the first model, so if (showFloor == false), we simply start the rendering
     //with the second model
     size_t i;
     for (showFloor ? i=0 : i=1; i < m_models.size(); ++i)
     {
-        //bind the shader program
-        m_program->bind();
-
+       
+		m_program->setUniformValue("modelMatrix", m_models[i]->getTransformations());
         //render the model
         m_models[i]->render(m_program);
 
