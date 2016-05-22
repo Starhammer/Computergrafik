@@ -41,4 +41,3 @@ OTHER_FILES += \
                     plane/plane.obj \
                     plane/plane.mtl \
 
-LIBS += opengl32.lib

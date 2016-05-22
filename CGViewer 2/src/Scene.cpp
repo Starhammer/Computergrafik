@@ -24,7 +24,6 @@ inline void OpenGLError()
 Scene::Scene(QWidget *parent) :  QGLWidget(parent)
 {
     m_program = nullptr;
-	m_selc_program = nullptr;
 
     mousepressed = false;
     isDragging = false;
@@ -71,11 +70,6 @@ Scene::~Scene()
         delete m_program;
         m_program = 0;
     }
-	if (m_selc_program)
-	{
-		delete m_selc_program;
-		m_selc_program = 0;
-	}
 }
 
 void Scene::saveScene(QString filepath)
@@ -264,10 +258,6 @@ void Scene::reloadShader()
     if (m_program)
         delete m_program;
     m_program = loadShaders(QString("shader/vertex.glsl"), QString("shader/fragment.glsl"));
-
-	if (m_selc_program)
-		delete m_selc_program;
-	m_selc_program = loadShaders(QString("shader/vertex.glsl"), QString("shader/selc_fragment.glsl"));
 }
 
 void Scene::setFloor()
@@ -456,6 +446,7 @@ void Scene::setTransformations()
     m_view.rotate((zRot / 16.0f), 0.0f, 0.0f, 1.0f);
 }
 
+
 void Scene::paintGL()
 {
     ++frame;
@@ -473,21 +464,13 @@ void Scene::paintGL()
     setTransformations();
 
     //render all models
-	m_program->bind();
-	m_selc_program->bind();
-	m_program->setUniformValue("matrixView", m_view);
-	m_program->setUniformValue("projectionMatrix", m_projection);
-	//if(m_selectedModel)
-	//	m_selc_program->setUniformValue("matrixModel", m_models[m_selectedModel]->getTransformations());
-
     //the floor is always the first model, so if (showFloor == false), we simply start the rendering
     //with the second model
     size_t i;
     for (showFloor ? i=0 : i=1; i < m_models.size(); ++i)
     {
         //bind the shader program
-		
-		m_selc_program->setUniformValue("matrixModel", m_models[i]->getTransformations());
+        m_program->bind();
 
         //render the model
         m_models[i]->render(m_program);
