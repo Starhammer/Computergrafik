@@ -1,41 +1,12 @@
-﻿  Moc'ing EditWidgets.h...
-  Moc'ing Mainwindow.h...
-  Moc'ing Scene.h...
-cl : Command line warning D9002: ignoring unknown option '-std=c++0x'
-  moc_EditWidgets.cpp
-  moc_Mainwindow.cpp
-  moc_Scene.cpp
-  EditWidgets.cpp
-  Light.cpp
-src\Light.cpp(109): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
-  Mainwindow.cpp
-  Model.cpp
-src\Model.cpp(115): warning C4267: 'argument': conversion from 'size_t' to 'unsigned int', possible loss of data
-src\Model.cpp(127): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(128): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(129): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(130): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(131): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(132): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(191): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(192): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(193): warning C4305: 'argument': truncation from 'double' to 'float'
-src\Model.cpp(431): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-src\Model.cpp(438): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-src\Model.cpp(445): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-src\Model.cpp(454): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-src\Model.cpp(621): warning C4267: 'argument': conversion from 'size_t' to 'GLsizei', possible loss of data
+﻿cl : Command line warning D9002: ignoring unknown option '-std=c++0x'
   Scene.cpp
-d:\users\manuel\documents\projekte\computergrafik\cgviewer 2\src\CGTypes.h(27): warning C4099: 'Material': type name first seen using 'class' now seen using 'struct'
-  d:\users\manuel\documents\projekte\computergrafik\cgviewer 2\src\CGTypes.h(26): note: see declaration of 'Material'
-src\Scene.cpp(95): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-src\Scene.cpp(113): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
-src\Scene.cpp(171): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-src\Scene.cpp(271): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
-src\Scene.cpp(370): warning C4305: 'initializing': truncation from 'double' to 'float'
-src\Scene.cpp(380): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
-src\Scene.cpp(394): warning C4100: 'event': unreferenced formal parameter
-  main.cpp
-  Generating Code...
-  LINK : debug\\CGViewer.exe not found or not built by the last incremental link; performing full link
-  CGViewer.vcxproj -> D:\Users\Manuel\Documents\Projekte\Computergrafik\CGViewer 2\debug\CGViewer.exe
+i:\eigene dokumente\projects\computergrafik\cgviewer 2\src\CGTypes.h(27): warning C4099: 'Material': type name first seen using 'class' now seen using 'struct'
+  i:\eigene dokumente\projects\computergrafik\cgviewer 2\src\CGTypes.h(26): note: see declaration of 'Material'
+src\Scene.cpp(101): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+src\Scene.cpp(119): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+src\Scene.cpp(177): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+src\Scene.cpp(280): warning C4305: 'argument': truncation from 'double' to 'GLclampf'
+src\Scene.cpp(379): warning C4305: 'initializing': truncation from 'double' to 'float'
+src\Scene.cpp(389): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data
+src\Scene.cpp(403): warning C4100: 'event': unreferenced formal parameter
+  CGViewer.vcxproj -> I:\Eigene Dokumente\Projects\Computergrafik\CGViewer 2\debug\CGViewer.exe

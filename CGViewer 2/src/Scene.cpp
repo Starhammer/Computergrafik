@@ -473,10 +473,7 @@ void Scene::paintGL()
     setTransformations();
 
 	 //bind the shader program
-        m_program->bind();
-		new_program->bind();
-		m_program->setUniformValue("viewMatrix", m_view);
-		m_program->setUniformValue("projectionMatrix", m_projection);
+    m_program->bind();	
 
     //render all models
     //the floor is always the first model, so if (showFloor == false), we simply start the rendering
@@ -484,13 +481,25 @@ void Scene::paintGL()
     size_t i;
     for (showFloor ? i=0 : i=1; i < m_models.size(); ++i)
     {
-       
-		m_program->setUniformValue("modelMatrix", m_models[i]->getTransformations());
-        //render the model
-        m_models[i]->render(m_program);
-
-        //release shader the program
-        m_program->release();
+		if (i == m_selectedModel)
+		{	
+			new_program->bind();
+			new_program->setUniformValue("viewMatrix", m_view);
+			new_program->setUniformValue("projectionMatrix", m_projection);
+			new_program->setUniformValue("modelMatrix", m_models[m_selectedModel]->getTransformations());
+			m_models[m_selectedModel]->render(new_program);
+			new_program->release();
+		}
+		else 
+		{
+			m_program->setUniformValue("viewMatrix", m_view);
+			m_program->setUniformValue("projectionMatrix", m_projection);
+			m_program->setUniformValue("modelMatrix", m_models[i]->getTransformations());
+			m_models[i]->render(m_program);
+			m_program->release();
+		}
     }
+	
+	
 
 }
