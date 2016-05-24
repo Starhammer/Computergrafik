@@ -483,6 +483,7 @@ void Scene::paintGL()
     {
 		if (i == m_selectedModel)
 		{	
+			
 			new_program->bind();
 			new_program->setUniformValue("viewMatrix", m_view);
 			new_program->setUniformValue("projectionMatrix", m_projection);
