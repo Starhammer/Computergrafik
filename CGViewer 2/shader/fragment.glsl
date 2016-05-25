@@ -4,6 +4,6 @@ out vec4 finalcolor;
 
 void main(void)
 {
-    finalcolor = vec4( 1.0, 1.0, 1.0, 1.0 );
-}
+   finalcolor = vec4( 1.0, 1.0, 1.0, 1.0 );
+} 
 

@@ -473,7 +473,7 @@ void Scene::paintGL()
     setTransformations();
 
 	 //bind the shader program
-    m_program->bind();	
+    	
 
     //render all models
     //the floor is always the first model, so if (showFloor == false), we simply start the rendering
@@ -493,9 +493,10 @@ void Scene::paintGL()
 		}
 		else 
 		{
+			m_program->bind();
 			m_program->setUniformValue("viewMatrix", m_view);
 			m_program->setUniformValue("projectionMatrix", m_projection);
-			m_program->setUniformValue("modelMatrix", m_models[i]->getTransformations());
+			m_program->setUniformValue("modelMatrix", m_models[i]->getTransformations());			
 			m_models[i]->render(m_program);
 			m_program->release();
 		}
